@@ -1,0 +1,145 @@
+/*
+Teamplate Name: Zakkash
+Author: Creative IT Institute
+Version: 1.0
+
+----------------------------------------------------------------
+Table of Contents
+----------------------------------------------------------------
+    1) Common Css
+    2) About Css
+*/
+
+/* Common  Css Start */
+:root {
+    --white-color: #ffffff;
+    --fog-white-color: #444444;
+    --dark-text-color: #222222;
+    --text-color:#dddddd;
+    --hlt-color: #de4644;
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --special-font: 'Sacramento', cursive;
+    --a-color:#0d6efd;
+    --a-hover-color:#0a58ca;
+}
+
+
+
+body {
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,a:hover {
+    text-decoration: none;
+}
+/* Common  Css end */
+#sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: #222222;
+    top: 0;
+    left: -200px;
+    position: fixed;
+    padding: 8px 16px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#sidebar .nav{
+    overflow-x: hidden;
+} 
+#sidebar.active{
+    left: 0;
+}
+#sidebar #sidebar_toggle_btn {
+   position: fixed;
+   left: 20px;
+   top: 6px;
+   padding: 0px 5px;
+   border-radius: 10px;
+   color: #fff;
+   background-color: #222222;
+   transition: all linear .3s;
+}
+
+#sidebar #sidebar_toggle_btn::after {
+   content: "\f205";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 700;
+}
+#sidebar.active #sidebar_toggle_btn{
+   background-color:#ffffff;
+   color: #222222;
+   left:160px;
+}
+#sidebar.active #sidebar_toggle_btn::after{
+   content: "\f204";
+}
+#sidebar span a{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: center;
+}
+#sidebar ul li a[data-bs-toggle="collapse"]::after{
+   content: '\f053';
+   font-family: 'Font Awesome 5 Free';
+   font-weight: 900;
+   position: absolute;
+   right: 20px;
+   transition:all linear .3s;
+}
+#sidebar ul li a i{
+    font-size: 20px;
+}
+#sidebar ul li{
+    padding: 10px 0;
+}
+#sidebar ul li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #0d6efd;
+    transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    -ms-transition: all linear .1s;
+    -o-transition: all linear .1s;
+}
+#sidebar ul li a:hover{
+    color: var(--a-hover-color);
+}
+
+.dropdown{
+    position: absolute;
+    bottom: 0px;
+}
+.dropdown-menu .dropdown-item{
+    color: #ffffff !important;
+    padding: 0 16px;
+}
+.dropdown-menu li{
+    padding-top: 0 !important;
+}
