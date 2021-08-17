@@ -34,36 +34,46 @@
 
 <body>
 
-    <section id="sidebar" class="active">
-        <button class="btn" id="sidebar_toggle_btn"></button>
-        <div class="nav">
-            <span><a href="#">Menu</a></span>
-            <ul>
-                <li class="nav-item"><a href="#"><i class="fas fa-house-user"></i>home</a></li>
-                <li class="nav-item"><a href="#"><i class="fas fa-tachometer-alt"></i>dashboard</a></li>
-                <li class="nav-item"><a href="#"><i class=""></i> item 1</a></li>
-                <li class="nav-item"><a href="#"><i class=""></i> item 2</a></li>
-                <li class="nav-item"><a href="#"><i class="fas fa-table"></i>orders</a></li>
-                <li class="nav-item"><a href="#"><i class="fas fa-th-large"></i> products</a></li>
-                <li class="nav-item"><a href="#"><i class="fas fa-user-friends"></i> customers</a></li>
-            </ul>
+    <div class="wrapper d-flex">
+        <div class="sidebar">
+            <button class="btn" id="sidebar_toggle_btn"></button>
+            <nav id="nav">
+                <span><a href="#">Menu</a></span>
+                <ul>
+                    <li class="nav-item"><a href="#"><i class="fas fa-house-user"></i>home</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-tachometer-alt"></i>dashboard</a></li>
+                    <li class="nav-item"><a href="#"><i class=""></i> item 1</a></li>
+                    <li class="nav-item"><a href="#"><i class=""></i> item 2</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-table"></i>orders</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-th-large"></i> products</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-user-friends"></i> customers</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
+                    <img src="assets/images/IMG_20190327_142404_198-01.jpeg" alt="" width="30" height="30" class="rounded-circle">
+                    <span class="d-none d-sm-inline mx-1">Nazmul</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark shadow">
+                    <li><a class="dropdown-item" href="#">New project</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="m-0">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
-                <img src="assets/images/IMG_20190327_142404_198-01.jpeg" alt="" width="30" height="30" class="rounded-circle">
-                <span class="d-none d-sm-inline mx-1">Nazmul</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark shadow">
-                <li><a class="dropdown-item" href="#">New project</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                    <hr class="m-0">
-                </li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <p class="ps-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nulla qui ipsam dignissimos fuga harum eos adipisci ducimus, quidem eaque. Reiciendis natus iste recusandae debitis doloremque vero quisquam? Omnis, laboriosam.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
 
     <!-- If Javascript is disable -->

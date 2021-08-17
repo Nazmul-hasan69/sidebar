@@ -25,7 +25,6 @@ Table of Contents
 }
 
 
-
 body {
     font-family: var(--main-font);
 }
@@ -52,13 +51,12 @@ a,a:hover {
     text-decoration: none;
 }
 /* Common  Css end */
-#sidebar{
+.sidebar{
     width: 200px;
     height: 100vh;
     background-color: #222222;
     top: 0;
-    left: -200px;
-    position: fixed;
+    margin-left: -200px;
     padding: 8px 16px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -66,13 +64,13 @@ a,a:hover {
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
 }
-#sidebar .nav{
+.sidebar .nav{
     overflow-x: hidden;
 } 
-#sidebar.active{
-    left: 0;
+.sidebar.active{
+    margin-left: 0;
 }
-#sidebar #sidebar_toggle_btn {
+.sidebar #sidebar_toggle_btn {
    position: fixed;
    left: 20px;
    top: 6px;
@@ -83,20 +81,20 @@ a,a:hover {
    transition: all linear .3s;
 }
 
-#sidebar #sidebar_toggle_btn::after {
+.sidebar #sidebar_toggle_btn::after {
    content: "\f205";
    font-family: "Font Awesome 5 Free";
    font-weight: 700;
 }
-#sidebar.active #sidebar_toggle_btn{
+.sidebar.active #sidebar_toggle_btn{
    background-color:#ffffff;
    color: #222222;
-   left:160px;
+   left:140px;
 }
-#sidebar.active #sidebar_toggle_btn::after{
+.sidebar.active #sidebar_toggle_btn::after{
    content: "\f204";
 }
-#sidebar span a{
+.sidebar span a{
     color: #ffffff;
     font-size: 40px;
     font-weight: 400;
@@ -104,7 +102,7 @@ a,a:hover {
     margin-bottom: 16px;
     text-align: center;
 }
-#sidebar ul li a[data-bs-toggle="collapse"]::after{
+.sidebar ul li a[data-bs-toggle="collapse"]::after{
    content: '\f053';
    font-family: 'Font Awesome 5 Free';
    font-weight: 900;
@@ -112,13 +110,13 @@ a,a:hover {
    right: 20px;
    transition:all linear .3s;
 }
-#sidebar ul li a i{
+.sidebar ul li a i{
     font-size: 20px;
 }
-#sidebar ul li{
+.sidebar ul li{
     padding: 10px 0;
 }
-#sidebar ul li a{
+.sidebar ul li a{
     font-size: 16px;
     text-transform: uppercase;
     color: #0d6efd;
@@ -128,7 +126,7 @@ a,a:hover {
     -ms-transition: all linear .1s;
     -o-transition: all linear .1s;
 }
-#sidebar ul li a:hover{
+.sidebar ul li a:hover{
     color: var(--a-hover-color);
 }
 
@@ -142,4 +140,8 @@ a,a:hover {
 }
 .dropdown-menu li{
     padding-top: 0 !important;
+}
+
+.content{
+    width: 100%;
 }
